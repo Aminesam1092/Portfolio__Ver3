@@ -1,0 +1,15 @@
+@use "../mixin/font"as f;
+.Nav{
+    width: 100%;
+    font-size: f.$font-size-mega;
+    font-family: f.$engfontfamily;
+    &__Lists{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    &__List{
+        margin: 20px 20px;
+        line-height: 80%;
+    }
+}

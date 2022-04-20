@@ -1,0 +1,179 @@
+@use "../base/base"as b;
+@use "../base/reset"as r;
+@use "../mixin/animation"as animation;
+@use "../mixin/breakpoint"as break;
+@use "../mixin/btn"as btn;
+@use "../mixin/font"as f;
+@use "../module/gnav"as gnav;
+@use "../module/footer"as footer;
+@use "../module/header"as header;
+@use "../setting/function"as function;
+
+.Portfolio{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    &__HeaddingText{
+        font-size: 15rem;
+        line-height: 80%;
+        font-family: f.$engfontfamily;
+        vertical-align: text-top;
+        text-shadow: 0 15px 5px #a1a1a1,0 -2px 1px rgb(73, 0, 0);
+    }
+    &__MyName{
+        margin-top: 10px;
+        font-size: 2.5rem;
+        line-height: 80%;
+        font-family: f.$engfontfamily;
+        vertical-align: text-top;
+    }
+}
+.Selfintroduction{
+    &__HeaddingText{
+        margin-top: 10px;
+        font-size: 5rem;
+        line-height: 80%;
+        opacity: 0;
+        font-family: f.$engfontfamily;
+        text-align: center;
+        vertical-align: text-top;
+    }
+    &__Profileconteiner{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    &__Myinfo{
+        width: 50%;
+        height: 50%;
+        border-radius: 25px;
+        box-shadow: 0px 0px 10px rgb(151, 151, 151);
+        opacity: 0;
+    }
+    &__Myname{
+        margin-top: 5px;
+        font-size: 2.5rem;
+        line-height: 80%;
+        margin: 10px 0;
+        text-align: center;
+        font-weight: 900;
+        vertical-align: text-top;
+    }
+    &__FirstBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    &__Picture{
+        width: 40%;
+        height: 40%;
+        margin: 20px;
+    }
+    &__Detailedinformation{
+        font-family: f.$jafontfamily;
+        font-size: f.$font-size-kilo;
+        vertical-align: text-top;
+    }
+    #Newline{
+        display: block;
+    }
+    #Setradious25{
+        border-radius: 25px;
+    }
+    #Changefonteng{
+        font-family: f.$engfontfamily;
+    }
+    #Changefontjp{
+        font-family: f.$jafontfamily;
+        font-size: 2.2rem;
+    }
+}
+.Skillintroduction{
+    width: 30%;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgb(151, 151, 151);
+    margin: 0 20px;
+    text-align: center;
+    opacity: 0;
+    &__Headdingtext{
+        margin-top: 5px;
+        font-size: 2.5rem;
+        line-height: 80%;
+        margin: 10px 0;
+        padding-bottom: 25px;
+        text-align: center;
+        font-weight: 900;
+        vertical-align: text-top;
+    }
+    &__Secondheaddingtext{
+        font-family: f.$jafontfamily;
+        font-size: 2.2rem;
+        margin-top: 5px;
+        font-size: 2.5rem;
+        line-height: 80%;
+        margin: 10px 5px;
+        text-align: center;
+        font-weight: 900;
+        vertical-align: text-top;
+    }
+    &__App{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        gap: 30px 20px;
+    }
+}
+.Workintroduction{
+    width: 100%;
+    &__Headdingtext{
+        margin-top: 10px;
+        font-size: 5rem;
+        line-height: 80%;
+        opacity: 0;
+        font-family: f.$engfontfamily;
+        text-align: center;
+        vertical-align: text-top;
+    }
+    &__SecondHeaddingtext{
+        margin-top: 50px;
+        font-size: 5rem;
+        line-height: 80%;
+        font-family: f.$engfontfamily;
+        text-align: center;
+        vertical-align: text-top;
+    }
+    &__Lists{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__List{
+        width: 50%;
+        text-align: center;
+    }
+    &__Title{
+        font-family: f.$jafontfamily;
+        font-size: 2.2rem;
+        font-size: 2.5rem;
+        line-height: 80%;
+        margin: 30px 0;
+        text-align: center;
+        font-weight: 900;
+        vertical-align: text-top;
+    }
+    &__Image{
+        width: 50%;
+        height: 50%;
+    }
+    &__ImageConteiner{
+        opacity: 0;
+    }
+}
