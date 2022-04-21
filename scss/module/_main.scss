@@ -23,6 +23,10 @@
         font-family: f.$engfontfamily;
         vertical-align: text-top;
         text-shadow: 0 15px 5px #a1a1a1,0 -2px 1px rgb(73, 0, 0);
+        @media (prefers-color-scheme: dark) {
+            color: rgb(194, 194, 194);
+            text-shadow: 0 0px 0px ,0 0px 0px ;
+        }
     }
     &__MyName{
         margin-top: 10px;
