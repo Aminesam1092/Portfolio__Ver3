@@ -149,16 +149,30 @@
         vertical-align: text-top;
     }
     &__Lists{
-        width: 900px;
+        width: 1300px;
+        margin: 0 auto;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        gap: 50px 50px;
     }
     &__List{
-        width: 300px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 550px;
+    }
+    &__Title{
+        margin: 50px 0;
+        font-size: f.$font-size-mega;
+        line-height: 80%;
+        font-family: f.$engfontfamily;
+        text-align: center;
+        vertical-align: text-top;
     }
     &__ImageConteiner{
-        opacity: 1;
+        opacity: 0;
     }
 }
