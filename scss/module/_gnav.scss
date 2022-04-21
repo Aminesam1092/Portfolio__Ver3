@@ -3,6 +3,10 @@
     width: 100%;
     font-size: f.$font-size-mega;
     font-family: f.$engfontfamily;
+    @media (prefers-color-scheme: dark) {
+        background-color: rgb(24, 24, 24);
+        color: rgb(194, 194, 194);
+    }
     &__Lists{
         display: flex;
         justify-content: end;

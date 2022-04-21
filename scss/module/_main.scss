@@ -8,6 +8,7 @@
 @use "../module/footer"as footer;
 @use "../module/header"as header;
 @use "../setting/function"as function;
+@use "../module/Dark"as Dark;
 
 .Portfolio{
     width: 100%;
@@ -51,8 +52,14 @@
         width: 50%;
         height: 50%;
         border-radius: 25px;
+        background-color: white;
         box-shadow: 0px 0px 10px rgb(151, 151, 151);
         opacity: 0;
+        @media (prefers-color-scheme: dark) {
+            background-color: rgb(24, 24, 24);
+            color: rgb(194, 194, 194);
+            box-shadow: 0px 0px 50px rgb(151, 151, 151);
+        }
     }
     &__Myname{
         margin-top: 5px;
@@ -98,8 +105,15 @@
     border-radius: 25px;
     box-shadow: 0px 0px 10px rgb(151, 151, 151);
     margin: 0 20px;
+    background-color: white;
     text-align: center;
     opacity: 0;
+    @media (prefers-color-scheme: dark) {
+        background-color: rgb(189, 189, 189);
+        color: rgb(56, 56, 56);
+        box-shadow: 0px 0px 50px rgb(151, 151, 151);
+        border: 1px solid rgb(24, 24, 24);
+    }
     &__Headdingtext{
         margin-top: 5px;
         font-size: 2.5rem;
