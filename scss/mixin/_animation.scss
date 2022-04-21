@@ -77,3 +77,10 @@
       transition: all 0.3s ease;
   }
 }
+#PointerFundation{
+  transition: all 0.3s ease;
+  &:hover{
+    opacity: 0.5;
+    transition: all 0.3s ease;
+  }
+}
