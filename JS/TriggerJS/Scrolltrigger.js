@@ -1,4 +1,4 @@
-gsap.to(".JS-trigger",{
+gsap.to(".Selfintroduction__HeaddingText",{
     scrollTrigger: {
         trigger: ".Selfintroduction__HeaddingText",
         start: "top center",
@@ -9,7 +9,7 @@ gsap.to(".JS-trigger",{
     opacity: 1,
 });
 
-gsap.to(".JS-trigger",{
+gsap.to(".Workintroduction__Headdingtext",{
     scrollTrigger: {
         trigger: ".Workintroduction__Headdingtext",
         start: "top center",
@@ -29,6 +29,17 @@ gsap.to(".Workintroduction__SecondHeaddingtext",{
         pin: true,
     },
     opacity: 0,
+});
+
+gsap.to(".Workdescription__HeaddingText",{
+    scrollTrigger: {
+        trigger: ".Workdescription__HeaddingText",
+        start: "top center",
+        end: '+=1500',
+        scrub: true,
+        pin: true,
+    },
+    opacity: 1,
 });
 
 gsap.to(".Selfintroduction__Myinfo",{
