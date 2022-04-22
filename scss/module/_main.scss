@@ -10,25 +10,40 @@
 @use "../setting/function"as function;
 @use "../module/Dark"as Dark;
 
-.Portfolio{
+.Alert{
+    width: 400px;
+    height: 50px;
+    margin: 50px auto;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0px 0px 10px red;
+}
+
+.Portfolio {
     width: 100%;
     height: 550px;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    &__HeaddingText{
+
+    &__HeaddingText {
         font-size: 15rem;
         line-height: 80%;
         font-family: f.$engfontfamily;
         vertical-align: text-top;
-        text-shadow: 0 15px 5px #a1a1a1,0 -2px 1px rgb(73, 0, 0);
+        text-shadow: 0 15px 5px #a1a1a1, 0 -2px 1px rgb(73, 0, 0);
+
         @media (prefers-color-scheme: dark) {
             color: rgb(194, 194, 194);
-            text-shadow: 0 0px 0px ,0 0px 0px ;
+            text-shadow: 0 0px 0px, 0 0px 0px;
         }
     }
-    &__MyName{
+
+    &__MyName {
         margin-top: 10px;
         font-size: 2.5rem;
         line-height: 80%;
@@ -36,8 +51,9 @@
         vertical-align: text-top;
     }
 }
-.Selfintroduction{
-    &__HeaddingText{
+
+.Selfintroduction {
+    &__HeaddingText {
         margin-top: 10px;
         font-size: 5rem;
         line-height: 80%;
@@ -46,26 +62,30 @@
         text-align: center;
         vertical-align: text-top;
     }
-    &__Profileconteiner{
+
+    &__Profileconteiner {
         width: 100%;
         display: flex;
         justify-content: center;
         margin-top: 100px;
     }
-    &__Myinfo{
+
+    &__Myinfo {
         width: 50%;
         height: 50%;
         border-radius: 25px;
         background-color: white;
         box-shadow: 0px 0px 10px rgb(151, 151, 151);
         opacity: 0;
+
         @media (prefers-color-scheme: dark) {
             background-color: rgb(24, 24, 24);
             color: rgb(194, 194, 194);
             box-shadow: 0px 0px 50px rgb(151, 151, 151);
         }
     }
-    &__Myname{
+
+    &__Myname {
         margin-top: 5px;
         font-size: 2.5rem;
         line-height: 80%;
@@ -74,37 +94,45 @@
         font-weight: 900;
         vertical-align: text-top;
     }
-    &__FirstBox{
+
+    &__FirstBox {
         display: flex;
         justify-content: center;
         align-items: center;
         padding-bottom: 10px;
     }
-    &__Picture{
+
+    &__Picture {
         width: 40%;
         height: 40%;
         margin: 20px;
     }
-    &__Detailedinformation{
+
+    &__Detailedinformation {
         font-family: f.$jafontfamily;
         font-size: f.$font-size-kilo;
         vertical-align: text-top;
     }
-    #Newline{
+
+    #Newline {
         display: block;
     }
-    #Setradious25{
+
+    #Setradious25 {
         border-radius: 25px;
     }
-    #Changefonteng{
+
+    #Changefonteng {
         font-family: f.$engfontfamily;
     }
-    #Changefontjp{
+
+    #Changefontjp {
         font-family: f.$jafontfamily;
         font-size: 2.2rem;
     }
 }
-.Skillintroduction{
+
+.Skillintroduction {
     width: 30%;
     border-radius: 25px;
     box-shadow: 0px 0px 10px rgb(151, 151, 151);
@@ -112,13 +140,15 @@
     background-color: white;
     text-align: center;
     opacity: 0;
+
     @media (prefers-color-scheme: dark) {
         background-color: rgb(189, 189, 189);
         color: rgb(56, 56, 56);
         box-shadow: 0px 0px 50px rgb(151, 151, 151);
         border: 1px solid rgb(24, 24, 24);
     }
-    &__Headdingtext{
+
+    &__Headdingtext {
         margin-top: 5px;
         font-size: 2.5rem;
         line-height: 80%;
@@ -128,7 +158,8 @@
         font-weight: 900;
         vertical-align: text-top;
     }
-    &__Secondheaddingtext{
+
+    &__Secondheaddingtext {
         font-family: f.$jafontfamily;
         font-size: 2.2rem;
         margin-top: 5px;
@@ -139,7 +170,8 @@
         font-weight: 900;
         vertical-align: text-top;
     }
-    &__App{
+
+    &__App {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -148,8 +180,9 @@
         gap: 30px 20px;
     }
 }
-.Workintroduction{
-    &__Headdingtext{
+
+.Workintroduction {
+    &__Headdingtext {
         margin-top: 10px;
         font-size: 5rem;
         line-height: 80%;
@@ -158,7 +191,8 @@
         text-align: center;
         vertical-align: text-top;
     }
-    &__SecondHeaddingtext{
+
+    &__SecondHeaddingtext {
         margin-top: 50px;
         font-size: 5rem;
         line-height: 80%;
@@ -166,7 +200,8 @@
         text-align: center;
         vertical-align: text-top;
     }
-    &__Lists{
+
+    &__Lists {
         width: 1300px;
         margin: 0 auto;
         display: flex;
@@ -175,14 +210,16 @@
         flex-wrap: wrap;
         gap: 50px 50px;
     }
-    &__List{
+
+    &__List {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
         width: 550px;
     }
-    &__Title{
+
+    &__Title {
         margin: 50px 0;
         font-size: f.$font-size-mega;
         line-height: 80%;
@@ -190,7 +227,8 @@
         text-align: center;
         vertical-align: text-top;
     }
-    &__ImageConteiner{
+
+    &__ImageConteiner {
         opacity: 0;
     }
 }
