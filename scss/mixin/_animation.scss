@@ -1,35 +1,42 @@
-@keyframes backgroundanimation{
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+@keyframes backgroundanimation {
+  0% {
+    background-position: 0% 50%;
   }
-  #JS-BackgroundWave{
-    width: 100%;
-    height: 100%;
-    z-index: -100;
-    position: fixed;
+
+  50% {
+    background-position: 100% 50%;
   }
-  .CCR{
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#JS-BackgroundWave {
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+  position: fixed;
+}
+
+.CCR {
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: rgb(255, 0, 0);
     transition: all 0.3s ease;
-    &:hover{
-      color: rgb(255, 0, 0);
-      transition: all 0.3s ease;
-      transform: scale(1.4);
-      transform-origin: center center;
-      transition: all 0.3s ease;
-      cursor: pointer;
+    transform: scale(1.4);
+    transform-origin: center center;
+    transition: all 0.3s ease;
+    cursor: pointer;
   }
-  }
+}
+
 .CCR {
   position: relative;
   display: inline-block;
   text-decoration: none;
+
   &::after {
     position: absolute;
     bottom: -4px;
@@ -42,15 +49,18 @@
     transform-origin: left top;
     transition: transform .3s;
   }
+
   &:hover::after {
     transform: scale(1, 1);
   }
 }
+
 .Foundation {
   position: relative;
   display: inline-block;
   text-decoration: none;
   transition: all 0.3s ease;
+
   &::after {
     position: absolute;
     bottom: -4px;
@@ -63,44 +73,54 @@
     transform-origin: left top;
     transition: transform .3s;
   }
+
   &:hover::after {
     transform: scale(1, 1);
   }
-  &:hover{
+
+  &:hover {
     color: rgb(255, 0, 0);
     transition: all 0.3s ease;
     transform: scale(1.1);
     transform-origin: center center;
     transition: all 0.3s ease;
     cursor: pointer;
-}
-}
-.Animation{
-  transition: all 0.3s ease;
-  &:hover{
-      transform: scale(1.4);
-      transform-origin: center center;
-      transition: all 0.3s ease;
   }
 }
-.PointerFundation{
+
+.Animation {
   transition: all 0.3s ease;
-  &:hover{
+
+  &:hover {
+    transform: scale(1.4);
+    transform-origin: center center;
+    transition: all 0.3s ease;
+  }
+}
+
+.PointerFundation {
+  transition: all 0.3s ease;
+
+  &:hover {
     opacity: 0.5;
     transition: all 0.3s ease;
   }
 }
-.GithubLink{
+
+.GithubLink {
   transition: all 0.3s ease;
-  &:hover{
+
+  &:hover {
     color: rgb(255, 0, 0);
     transition: all 0.3s ease;
     cursor: pointer;
+  }
 }
-}
-.Workdescription__Productionexplanation{
+
+.Workdescription__Productionexplanation {
   transition: all 0.3s ease;
-  &:hover{
+
+  &:hover {
     transition: all 0.3s ease;
     transform: scale(1.1);
   }
