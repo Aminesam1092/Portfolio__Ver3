@@ -42,6 +42,17 @@ gsap.to(".Workdescription__HeaddingText",{
     opacity: 1,
 });
 
+gsap.to(".DesginConteiner__HeaddingText",{
+    scrollTrigger: {
+        trigger: ".DesginConteiner__HeaddingText",
+        start: "top center",
+        end: '+=1500',
+        scrub: true,
+        pin: true,
+    },
+    opacity: 1,
+});
+
 gsap.to(".Selfintroduction__Myinfo",{
     scrollTrigger: {
         trigger: ".Selfintroduction__Myinfo",
@@ -99,5 +110,45 @@ gsap.to(".JS--Animation04",{
         end: 'bottom center',
     },
     duration: 5,
+    opacity: 1,
+});
+
+gsap.to(".JS--FeadAnimation01",{
+    scrollTrigger: {
+        trigger: ".JS--FeadAnimation01",
+        start: "top center",
+        end: 'bottom center',
+    },
+    duration: 2,
+    opacity: 1,
+});
+
+gsap.to(".JS--FeadAnimation02",{
+    scrollTrigger: {
+        trigger: ".JS--FeadAnimation01",
+        start: "top center",
+        end: 'bottom center',
+    },
+    duration: 2,
+    opacity: 1,
+});
+
+gsap.to(".JS--FeadAnimation03",{
+    scrollTrigger: {
+        trigger: ".JS--FeadAnimation01",
+        start: "top center",
+        end: 'bottom center',
+    },
+    duration: 2,
+    opacity: 1,
+});
+
+gsap.to(".JS--FeadAnimation04",{
+    scrollTrigger: {
+        trigger: ".JS--FeadAnimation01",
+        start: "top center",
+        end: 'bottom center',
+    },
+    duration: 2,
     opacity: 1,
 });

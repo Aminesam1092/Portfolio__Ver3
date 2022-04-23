@@ -251,6 +251,10 @@
         margin: 150px 0;
     }
 
+    .JS--FeadAnimation01,.JS--FeadAnimation02,.JS--FeadAnimation03,.JS--FeadAnimation04{
+        opacity: 0;
+    }
+
     &__ImageBox {
         width: 50%;
         margin: 0 50px;
@@ -280,15 +284,18 @@
         text-align: center;
         vertical-align: text-top;
     }
-    &__Productionexplanation{
+
+    &__Productionexplanation {
         background-color: white;
         box-shadow: 0px 0px 50px white;
+
         @media (prefers-color-scheme: dark) {
             background-color: rgb(24, 24, 24);
             color: rgb(194, 194, 194);
             box-shadow: 0px 0px 0px rgb(24, 24, 24);
         }
     }
+
     &__ExplanationText {
         margin: 10px 50px;
         font-size: f.$font-size-milli;
@@ -300,5 +307,19 @@
         @media (prefers-color-scheme: dark) {
             border-bottom: 1px solid rgb(189, 189, 189);
         }
+    }
+}
+
+.DesginConteiner {
+    width: 100%;
+
+    &__HeaddingText {
+        margin-top: 10px;
+        font-size: 5rem;
+        line-height: 80%;
+        opacity: 0;
+        font-family: f.$engfontfamily;
+        text-align: center;
+        vertical-align: text-top;
     }
 }
