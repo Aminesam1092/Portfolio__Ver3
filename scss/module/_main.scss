@@ -208,6 +208,7 @@
         border-radius: 25px;
         box-shadow: 0px 0px 10px rgb(151, 151, 151);
         background-color: white;
+
         @media (prefers-color-scheme: dark) {
             background-color: rgb(24, 24, 24);
             color: rgb(194, 194, 194);
@@ -229,9 +230,11 @@
         opacity: 0;
     }
 }
-.Workdescription{
+
+.Workdescription {
     width: 100%;
-    &__HeaddingText{
+
+    &__HeaddingText {
         margin-top: 10px;
         font-size: 5rem;
         line-height: 80%;
@@ -240,17 +243,27 @@
         text-align: center;
         vertical-align: text-top;
     }
-    &__Conteiner{
+
+    &__Conteiner {
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 150px 0;
     }
-    &__ImageBox{
+
+    &__ImageBox {
         width: 50%;
         margin: 0 50px;
     }
-    &__Title{
+
+    &__InductionText {
+        margin: 20px 0;
+        text-align: center;
+        font-size: f.$font-size-micro;
+        font-family: f.$jafontfamily;
+    }
+
+    &__Title {
         margin: 20px 0;
         font-size: f.$font-size-mega;
         line-height: 80%;
@@ -258,7 +271,8 @@
         text-align: center;
         vertical-align: text-top;
     }
-    &__Explanation{
+
+    &__Explanation {
         margin: 20px 0;
         font-size: f.$font-size-giga;
         line-height: 80%;
@@ -266,13 +280,15 @@
         text-align: center;
         vertical-align: text-top;
     }
-    &__ExplanationText{
+
+    &__ExplanationText {
         margin: 10px 50px;
         font-size: f.$font-size-milli;
         font-family: f.$jafontfamily;
         text-align: center;
         vertical-align: text-top;
         border-bottom: 1px solid rgb(0, 0, 0);
+
         @media (prefers-color-scheme: dark) {
             border-bottom: 1px solid rgb(189, 189, 189);
         }
