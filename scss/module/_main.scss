@@ -251,7 +251,10 @@
         margin: 150px 0;
     }
 
-    .JS--FeadAnimation01,.JS--FeadAnimation02,.JS--FeadAnimation03,.JS--FeadAnimation04{
+    .JS--FeadAnimation01,
+    .JS--FeadAnimation02,
+    .JS--FeadAnimation03,
+    .JS--FeadAnimation04 {
         opacity: 0;
     }
 
@@ -318,6 +321,16 @@
         font-size: 5rem;
         line-height: 80%;
         opacity: 0;
+        font-family: f.$engfontfamily;
+        text-align: center;
+        vertical-align: text-top;
+    }
+
+    &__SecondHeaddingText {
+        margin-top: 10px;
+        font-size: 5rem;
+        line-height: 80%;
+        opacity: 1;
         font-family: f.$engfontfamily;
         text-align: center;
         vertical-align: text-top;
