@@ -15,18 +15,18 @@
     z-index: -100;
     position: fixed;
   }
-  #CCR{
+  .CCR{
     transition: all 0.3s ease;
+    &:hover{
+      color: rgb(255, 0, 0);
+      transition: all 0.3s ease;
+      transform: scale(1.4);
+      transform-origin: center center;
+      transition: all 0.3s ease;
+      cursor: pointer;
   }
-  #CCR:hover{
-    color: rgb(255, 0, 0);
-    transition: all 0.3s ease;
-    transform: scale(1.4);
-    transform-origin: center center;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-#CCR {
+  }
+.CCR {
   position: relative;
   display: inline-block;
   text-decoration: none;
@@ -46,7 +46,7 @@
     transform: scale(1, 1);
   }
 }
-#Foundation {
+.Foundation {
   position: relative;
   display: inline-block;
   text-decoration: none;
@@ -83,7 +83,7 @@
       transition: all 0.3s ease;
   }
 }
-#PointerFundation{
+.PointerFundation{
   transition: all 0.3s ease;
   &:hover{
     opacity: 0.5;
