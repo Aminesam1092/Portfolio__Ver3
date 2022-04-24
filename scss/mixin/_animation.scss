@@ -129,6 +129,6 @@
   transition: all 0.3s ease;
   &:hover {
     transition: all 0.3s ease;
-    opacity: 0.5;
+    transform: scale(1.1);
   }
 }
