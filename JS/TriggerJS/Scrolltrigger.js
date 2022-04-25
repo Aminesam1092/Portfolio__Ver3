@@ -259,3 +259,33 @@ gsap.to(".JS--FeadAnimation10", {
     duration: 2,
     opacity: 1,
 });
+
+gsap.to(".JS--FeadAnimation11", {
+    scrollTrigger: {
+        trigger: ".JS--FeadAnimation10",
+        start: "top center",
+        end: 'bottom center',
+    },
+    duration: 2,
+    opacity: 1,
+});
+
+gsap.to(".JS--FeadAnimation12", {
+    scrollTrigger: {
+        trigger: ".JS--FeadAnimation10",
+        start: "top center",
+        end: 'bottom center',
+    },
+    duration: 2,
+    opacity: 1,
+});
+
+gsap.to(".JS--FeadAnimation13", {
+    scrollTrigger: {
+        trigger: ".JS--FeadAnimation10",
+        start: "top center",
+        end: 'bottom center',
+    },
+    duration: 2,
+    opacity: 1,
+});
