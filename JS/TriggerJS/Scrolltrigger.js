@@ -262,7 +262,7 @@ gsap.to(".JS--FeadAnimation10", {
 
 gsap.to(".JS--FeadAnimation11", {
     scrollTrigger: {
-        trigger: ".JS--FeadAnimation10",
+        trigger: ".JS--FeadAnimation11",
         start: "top center",
         end: 'bottom center',
     },
@@ -272,7 +272,7 @@ gsap.to(".JS--FeadAnimation11", {
 
 gsap.to(".JS--FeadAnimation12", {
     scrollTrigger: {
-        trigger: ".JS--FeadAnimation10",
+        trigger: ".JS--FeadAnimation12",
         start: "top center",
         end: 'bottom center',
     },
@@ -282,7 +282,17 @@ gsap.to(".JS--FeadAnimation12", {
 
 gsap.to(".JS--FeadAnimation13", {
     scrollTrigger: {
-        trigger: ".JS--FeadAnimation10",
+        trigger: ".JS--FeadAnimation13",
+        start: "top center",
+        end: 'bottom center',
+    },
+    duration: 2,
+    opacity: 1,
+});
+
+gsap.to(".JS--FeadAnimation14", {
+    scrollTrigger: {
+        trigger: ".JS--FeadAnimation14",
         start: "top center",
         end: 'bottom center',
     },
