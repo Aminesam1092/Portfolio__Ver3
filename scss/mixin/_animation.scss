@@ -1,3 +1,5 @@
+@use "../mixin/breakpoint"as break;
+
 @keyframes backgroundanimation {
   0% {
     background-position: 0% 50%;
@@ -65,7 +67,6 @@
   text-decoration: none;
   transition: all 0.3s ease;
 
-
   &::after {
     position: absolute;
     bottom: -4px;
@@ -81,6 +82,7 @@
 
   &:hover::after {
     transform: scale(1, 1);
+
   }
 
   &:hover {
@@ -122,15 +124,6 @@
   }
 }
 
-.Workdescription__Productionexplanation {
-  transition: all 0.3s ease;
-
-  &:hover {
-    transition: all 0.3s ease;
-    transform: scale(1.1);
-  }
-}
-
 .ImageEditSize {
   transition: all 0.3s ease;
 
@@ -155,6 +148,6 @@
 .JS--FeadAnimation11,
 .JS--FeadAnimation12,
 .JS--FeadAnimation13,
-.JS--FeadAnimation14{
+.JS--FeadAnimation14 {
   opacity: 0;
 }

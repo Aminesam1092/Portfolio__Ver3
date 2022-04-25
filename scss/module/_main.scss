@@ -17,6 +17,7 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
+
     @include break.breakpoint(tablet) {
         text-align: center;
     }
@@ -27,9 +28,11 @@
         font-family: f.$engfontfamily;
         vertical-align: text-top;
         text-shadow: 0 15px 5px #a1a1a1, 0 -2px 1px rgb(73, 0, 0);
+
         @include break.breakpoint(tablet) {
             margin-top: 300px;
         }
+
         @include break.breakpoint(smartphone) {
             font-size: 7rem;
             margin-top: 0px;
@@ -48,6 +51,7 @@
         font-family: f.$engfontfamily;
         vertical-align: text-top;
     }
+
     @include break.breakpoint(smartphone) {
         font-size: f.$font-size-kilo;
     }
@@ -55,6 +59,7 @@
 
 .Selfintroduction {
     width: 100%;
+
     &__HeaddingText {
         margin-top: 10px;
         font-size: 5rem;
@@ -70,6 +75,7 @@
         display: flex;
         justify-content: center;
         margin-top: 100px;
+
         @include break.breakpoint(tablet) {
             flex-flow: column;
         }
@@ -82,6 +88,7 @@
         background-color: white;
         box-shadow: 0px 0px 10px rgb(151, 151, 151);
         opacity: 0;
+
         @include break.breakpoint(tablet) {
             width: 100%;
             box-shadow: 0px 0px 10px rgb(151, 151, 151);
@@ -91,8 +98,9 @@
             background-color: rgb(24, 24, 24);
             color: rgb(194, 194, 194);
             box-shadow: 0px 0px 50px rgb(151, 151, 151);
+
             @include break.breakpoint(tablet) {
-                box-shadow: 0px 0px 10px  rgb(24, 24, 24);
+                box-shadow: 0px 0px 10px rgb(24, 24, 24);
             }
         }
     }
@@ -105,20 +113,24 @@
         text-align: center;
         font-weight: 900;
         vertical-align: text-top;
+
         @include break.breakpoint(smartphone) {
             font-size: f.$font-size-mega;
         }
     }
-    .Blockline{
+
+    .Blockline {
         @include break.breakpoint(smartphone) {
             display: block;
         }
     }
+
     &__FirstBox {
         display: flex;
         justify-content: center;
         align-items: center;
         padding-bottom: 10px;
+
         @include break.breakpoint(smartphone) {
             flex-flow: column;
         }
@@ -128,6 +140,7 @@
         width: 40%;
         height: 40%;
         margin: 20px;
+
         @include break.breakpoint(smartphone) {
             width: 90%;
         }
@@ -137,6 +150,7 @@
         font-family: f.$jafontfamily;
         font-size: f.$font-size-kilo;
         vertical-align: text-top;
+
         @include break.breakpoint(smartphone) {
             text-align: center;
         }
@@ -168,6 +182,7 @@
     background-color: white;
     text-align: center;
     opacity: 0;
+
     @include break.breakpoint(tablet) {
         width: 100%;
         margin: 100px 0;
@@ -178,6 +193,7 @@
         color: rgb(56, 56, 56);
         box-shadow: 0px 0px 50px rgb(151, 151, 151);
         border: 1px solid rgb(24, 24, 24);
+
         @include break.breakpoint(tablet) {
             border-radius: 0px;
         }
@@ -218,6 +234,7 @@
 
 .Workintroduction {
     width: 100%;
+
     &__Headdingtext {
         margin-top: 10px;
         font-size: 5rem;
@@ -245,13 +262,15 @@
         align-items: center;
         flex-wrap: wrap;
         gap: 50px 50px;
+
         @include break.breakpoint(tablet) {
             width: 100%;
             flex-flow: column;
         }
+
         @include break.breakpoint(smartphone) {
-            width: 100%;
             flex-flow: column;
+            gap: 0px 0px;
         }
     }
 
@@ -262,11 +281,13 @@
         align-items: center;
         width: 550px;
         border-radius: 25px;
+
         @include break.breakpoint(tablet) {
             flex-flow: column;
         }
+
         @include break.breakpoint(smartphone) {
-            width: 320px;
+            width: 290px;
             flex-flow: column;
         }
 
@@ -274,6 +295,7 @@
             background-color: rgb(24, 24, 24);
             color: rgb(194, 194, 194);
             box-shadow: 0px 0px 25px rgb(151, 151, 151);
+
             @include break.breakpoint(tablet) {
                 box-shadow: 0px 0px 25px rgb(24, 24, 24);
             }
@@ -292,6 +314,7 @@
     &__ImageConteiner {
         margin: 10px 20px;
         opacity: 0;
+
         @include break.breakpoint(tablet) {
             margin: 10px auto;
         }
@@ -316,6 +339,7 @@
         justify-content: center;
         align-items: center;
         margin: 150px 0;
+
         @include break.breakpoint(tablet) {
             flex-flow: column;
         }
@@ -324,9 +348,11 @@
     &__ImageBox {
         width: 50%;
         margin: 0 50px;
+
         @include break.breakpoint(tablet) {
             width: 70%;
         }
+
         @include break.breakpoint(smartphone) {
             width: 90%;
         }
@@ -361,9 +387,11 @@
         width: 40%;
         background-color: white;
         box-shadow: 0px 0px 25px white;
+
         @include break.breakpoint(tablet) {
             width: 80%;
         }
+
         @include break.breakpoint(smartphone) {
             width: 100%;
         }
@@ -382,10 +410,13 @@
         text-align: left;
         vertical-align: text-top;
         border-bottom: 1px solid rgb(0, 0, 0);
+
         @include break.breakpoint(tablet) {
             text-align: center;
         }
+
         @include break.breakpoint(smartphone) {
+            font-size: f.$font-size-micro;
             margin: 10px 10px;
         }
 
@@ -417,11 +448,13 @@
         vertical-align: text-top;
         opacity: 0;
     }
-    &__ContentBox{
+
+    &__ContentBox {
         margin: 50px 0;
         opacity: 0;
     }
-    &__ImageBox{
+
+    &__ImageBox {
         width: 1160px;
         margin: 0 auto;
         display: flex;
@@ -429,39 +462,56 @@
         align-items: center;
         flex-wrap: wrap;
         gap: 20px 20px;
+
         @include break.breakpoint(tablet) {
             width: 100%;
             flex-flow: column;
             margin: 50px auto;
             gap: 50px 20px;
         }
-        .ImageEditSize{
+        @include break.breakpoint(smartphone) {
+            width: 90%;
+        }
+
+        .ImageEditSize {
             width: 300px;
             cursor: pointer;
+
             @include break.breakpoint(tablet) {
                 width: 530px;
             }
         }
     }
-    &__ExplanationText{
+
+    &__ExplanationText {
         margin: 30px 0;
         font-size: f.$font-size-mega;
         font-family: f.$jafontfamily;
         text-align: center;
         vertical-align: text-top;
     }
-    &__AlertText{
+
+    &__AlertText {
         margin: 10px 0;
         font-size: f.$font-size-kilo;
         font-family: f.$jafontfamily;
         text-align: center;
         vertical-align: text-top;
         color: red;
+
+        @include break.breakpoint(tablet) {
+        }
+
+        @include break.breakpoint(smartphone) {
+            font-size: f.$font-size-micro;
+        }
     }
 }
-.MovieConteiner{
+
+.MovieConteiner {
     width: 100%;
-    &__HeaddingText{
+
+    &__HeaddingText {
         margin-top: 10px;
         font-size: 5rem;
         line-height: 80%;
@@ -470,16 +520,19 @@
         text-align: center;
         vertical-align: text-top;
     }
-    &__Conteiner{
+
+    &__Conteiner {
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 50px 0px;
+
         @include break.breakpoint(smartphone) {
             flex-flow: column;
         }
     }
-    &__Explanation{
+
+    &__Explanation {
         margin: 20px 0;
         font-size: f.$font-size-giga;
         line-height: 80%;
@@ -487,13 +540,15 @@
         text-align: center;
         vertical-align: text-top;
     }
-    &__ExplanationText{
+
+    &__ExplanationText {
         margin: 10px 50px;
         font-size: f.$font-size-milli;
         font-family: f.$jafontfamily;
         text-align: left;
         vertical-align: text-top;
         border-bottom: 1px solid rgb(0, 0, 0);
+
         @include break.breakpoint(tablet) {
             text-align: center;
         }
@@ -502,10 +557,11 @@
             border-bottom: 1px solid rgb(189, 189, 189);
         }
     }
-    &__YoutubeMovie{
+
+    &__YoutubeMovie {
         @include break.breakpoint(smartphone) {
-           width: 292px;
-           height: 169px;
+            width: 292px;
+            height: 169px;
         }
     }
 }
