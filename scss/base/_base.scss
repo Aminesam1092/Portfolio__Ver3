@@ -31,12 +31,6 @@ html{
 }
 body{
     width: 100%;
-    overflow-x: hidden;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    &::-webkit-scrollbar {
-            display: none;
-    }
 }
 ul li{
     list-style: none;

@@ -1,4 +1,5 @@
 @use "../mixin/font"as f;
+@use "../mixin/breakpoint"as break;
 .Nav{
     width: 100%;
     font-size: f.$font-size-mega;
@@ -11,6 +12,9 @@
         display: flex;
         justify-content: end;
         align-items: center;
+        @include break.breakpoint(tablet) {
+            justify-content: center;
+        }
     }
     &__List{
         margin: 20px 20px;

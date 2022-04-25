@@ -17,6 +17,9 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    @include break.breakpoint(tablet) {
+        text-align: center;
+    }
 
     &__HeaddingText {
         font-size: 15rem;
@@ -24,6 +27,9 @@
         font-family: f.$engfontfamily;
         vertical-align: text-top;
         text-shadow: 0 15px 5px #a1a1a1, 0 -2px 1px rgb(73, 0, 0);
+        @include break.breakpoint(tablet) {
+            margin-top: 300px;
+        }
 
         @media (prefers-color-scheme: dark) {
             color: rgb(194, 194, 194);
@@ -41,6 +47,7 @@
 }
 
 .Selfintroduction {
+    width: 100%;
     &__HeaddingText {
         margin-top: 10px;
         font-size: 5rem;
@@ -56,6 +63,9 @@
         display: flex;
         justify-content: center;
         margin-top: 100px;
+        @include break.breakpoint(tablet) {
+            flex-flow: column;
+        }
     }
 
     &__Myinfo {
@@ -65,11 +75,18 @@
         background-color: white;
         box-shadow: 0px 0px 10px rgb(151, 151, 151);
         opacity: 0;
+        @include break.breakpoint(tablet) {
+            width: 100%;
+            box-shadow: 0px 0px 10px rgb(151, 151, 151);
+        }
 
         @media (prefers-color-scheme: dark) {
             background-color: rgb(24, 24, 24);
             color: rgb(194, 194, 194);
             box-shadow: 0px 0px 50px rgb(151, 151, 151);
+            @include break.breakpoint(tablet) {
+                box-shadow: 0px 0px 10px  rgb(24, 24, 24);
+            }
         }
     }
 
@@ -128,12 +145,19 @@
     background-color: white;
     text-align: center;
     opacity: 0;
+    @include break.breakpoint(tablet) {
+        width: 100%;
+        margin: 100px 0;
+    }
 
     @media (prefers-color-scheme: dark) {
         background-color: rgb(189, 189, 189);
         color: rgb(56, 56, 56);
         box-shadow: 0px 0px 50px rgb(151, 151, 151);
         border: 1px solid rgb(24, 24, 24);
+        @include break.breakpoint(tablet) {
+            border-radius: 0px;
+        }
     }
 
     &__Headdingtext {
@@ -170,6 +194,7 @@
 }
 
 .Workintroduction {
+    width: 100%;
     &__Headdingtext {
         margin-top: 10px;
         font-size: 5rem;
@@ -197,6 +222,10 @@
         align-items: center;
         flex-wrap: wrap;
         gap: 50px 50px;
+        @include break.breakpoint(tablet) {
+            width: 100%;
+            flex-flow: column;
+        }
     }
 
     &__List {
@@ -206,11 +235,17 @@
         align-items: center;
         width: 550px;
         border-radius: 25px;
+        @include break.breakpoint(tablet) {
+            flex-flow: column;
+        }
 
         @media (prefers-color-scheme: dark) {
             background-color: rgb(24, 24, 24);
             color: rgb(194, 194, 194);
             box-shadow: 0px 0px 25px rgb(151, 151, 151);
+            @include break.breakpoint(tablet) {
+                box-shadow: 0px 0px 25px rgb(24, 24, 24);
+            }
         }
     }
 
@@ -226,6 +261,9 @@
     &__ImageConteiner {
         margin: 10px 20px;
         opacity: 0;
+        @include break.breakpoint(tablet) {
+            margin: 10px auto;
+        }
     }
 }
 
@@ -247,11 +285,17 @@
         justify-content: center;
         align-items: center;
         margin: 150px 0;
+        @include break.breakpoint(tablet) {
+            flex-flow: column;
+        }
     }
 
     &__ImageBox {
         width: 50%;
         margin: 0 50px;
+        @include break.breakpoint(tablet) {
+            width: 70%;
+        }
     }
 
     &__InductionText {
@@ -283,6 +327,9 @@
         width: 40%;
         background-color: white;
         box-shadow: 0px 0px 25px white;
+        @include break.breakpoint(tablet) {
+            width: 80%;
+        }
 
         @media (prefers-color-scheme: dark) {
             background-color: rgb(24, 24, 24);
@@ -298,6 +345,9 @@
         text-align: left;
         vertical-align: text-top;
         border-bottom: 1px solid rgb(0, 0, 0);
+        @include break.breakpoint(tablet) {
+            text-align: center;
+        }
 
         @media (prefers-color-scheme: dark) {
             border-bottom: 1px solid rgb(189, 189, 189);
@@ -339,9 +389,18 @@
         align-items: center;
         flex-wrap: wrap;
         gap: 20px 20px;
+        @include break.breakpoint(tablet) {
+            width: 100%;
+            flex-flow: column;
+            margin: 50px auto;
+            gap: 50px 20px;
+        }
         .ImageEditSize{
             width: 300px;
             cursor: pointer;
+            @include break.breakpoint(tablet) {
+                width: 530px;
+            }
         }
     }
     &__ExplanationText{
