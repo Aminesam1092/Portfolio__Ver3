@@ -30,6 +30,10 @@
         @include break.breakpoint(tablet) {
             margin-top: 300px;
         }
+        @include break.breakpoint(smartphone) {
+            font-size: 7rem;
+            margin-top: 0px;
+        }
 
         @media (prefers-color-scheme: dark) {
             color: rgb(194, 194, 194);
@@ -43,6 +47,9 @@
         line-height: 80%;
         font-family: f.$engfontfamily;
         vertical-align: text-top;
+    }
+    @include break.breakpoint(smartphone) {
+        font-size: f.$font-size-kilo;
     }
 }
 
@@ -98,25 +105,41 @@
         text-align: center;
         font-weight: 900;
         vertical-align: text-top;
+        @include break.breakpoint(smartphone) {
+            font-size: f.$font-size-mega;
+        }
     }
-
+    .Blockline{
+        @include break.breakpoint(smartphone) {
+            display: block;
+        }
+    }
     &__FirstBox {
         display: flex;
         justify-content: center;
         align-items: center;
         padding-bottom: 10px;
+        @include break.breakpoint(smartphone) {
+            flex-flow: column;
+        }
     }
 
     &__Picture {
         width: 40%;
         height: 40%;
         margin: 20px;
+        @include break.breakpoint(smartphone) {
+            width: 90%;
+        }
     }
 
     &__Detailedinformation {
         font-family: f.$jafontfamily;
         font-size: f.$font-size-kilo;
         vertical-align: text-top;
+        @include break.breakpoint(smartphone) {
+            text-align: center;
+        }
     }
 
     .Newline {
@@ -226,6 +249,10 @@
             width: 100%;
             flex-flow: column;
         }
+        @include break.breakpoint(smartphone) {
+            width: 100%;
+            flex-flow: column;
+        }
     }
 
     &__List {
@@ -236,6 +263,10 @@
         width: 550px;
         border-radius: 25px;
         @include break.breakpoint(tablet) {
+            flex-flow: column;
+        }
+        @include break.breakpoint(smartphone) {
+            width: 320px;
             flex-flow: column;
         }
 
@@ -296,6 +327,9 @@
         @include break.breakpoint(tablet) {
             width: 70%;
         }
+        @include break.breakpoint(smartphone) {
+            width: 90%;
+        }
     }
 
     &__InductionText {
@@ -330,6 +364,9 @@
         @include break.breakpoint(tablet) {
             width: 80%;
         }
+        @include break.breakpoint(smartphone) {
+            width: 100%;
+        }
 
         @media (prefers-color-scheme: dark) {
             background-color: rgb(24, 24, 24);
@@ -347,6 +384,9 @@
         border-bottom: 1px solid rgb(0, 0, 0);
         @include break.breakpoint(tablet) {
             text-align: center;
+        }
+        @include break.breakpoint(smartphone) {
+            margin: 10px 10px;
         }
 
         @media (prefers-color-scheme: dark) {
@@ -429,5 +469,43 @@
         font-family: f.$engfontfamily;
         text-align: center;
         vertical-align: text-top;
+    }
+    &__Conteiner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0px;
+        @include break.breakpoint(smartphone) {
+            flex-flow: column;
+        }
+    }
+    &__Explanation{
+        margin: 20px 0;
+        font-size: f.$font-size-giga;
+        line-height: 80%;
+        font-family: f.$engfontfamily;
+        text-align: center;
+        vertical-align: text-top;
+    }
+    &__ExplanationText{
+        margin: 10px 50px;
+        font-size: f.$font-size-milli;
+        font-family: f.$jafontfamily;
+        text-align: left;
+        vertical-align: text-top;
+        border-bottom: 1px solid rgb(0, 0, 0);
+        @include break.breakpoint(tablet) {
+            text-align: center;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            border-bottom: 1px solid rgb(189, 189, 189);
+        }
+    }
+    &__YoutubeMovie{
+        @include break.breakpoint(smartphone) {
+           width: 292px;
+           height: 169px;
+        }
     }
 }

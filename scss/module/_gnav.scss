@@ -8,6 +8,9 @@
         background-color: rgb(24, 24, 24);
         color: rgb(194, 194, 194);
     }
+    @include break.breakpoint(smartphone) {
+        font-size: f.$font-size-milli;
+    }
     &__Lists{
         display: flex;
         justify-content: end;

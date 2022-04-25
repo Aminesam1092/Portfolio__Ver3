@@ -46,7 +46,7 @@
             <section class="Selfintroduction__Profileconteiner" id="SKILL">
                 <section class="Selfintroduction__Myinfo">
                     <h3 class="Selfintroduction__Myname"><span class="Changefonteng">DOUBLALI AMINE</span> <span
-                            class="Changefontjp">ドウブラリアミン</span></h3>
+                            class="Changefontjp Blockline">ドウブラリアミン</span></h3>
                     <div class="Selfintroduction__FirstBox">
                         <p class="Selfintroduction__Picture">
                             <picture>
@@ -632,7 +632,20 @@
             <h2 class="MovieConteiner__HeaddingText JS-TriggerAnimation05">Movie</h2>
             <article class="MovieConteiner__Conteiner">
                 <section class="MovieConteiner__ImageBox">
-                    <video loading="lazy" class="Video" src="video/video.mp4" loop autoplay muted></video>
+                    <video class="lazy MovieConteiner__Movie" autoplay muted loop playsinline width="732" height="304">
+                        <source data-src="video/video.webm" type="video/webm">
+                        <source data-src="video/video.mp4" type="video/mp4">
+                    </video>
+                </section>
+                <section class="MovieConteiner__Productionexplanation">
+                    <h3 class="MovieConteiner__Explanation">Explanation</h3>
+                    <p class="MovieConteiner__ExplanationText">この作品はお仕事として制作いたしました。</p>
+                    <p class="MovieConteiner__ExplanationText">こちらの作品を作るにあたって意識した点はインパクトですく</p>
+                </section>
+            </article>
+            <article class="MovieConteiner__Conteiner">
+                <section class="MovieConteiner__ImageBox">
+                    <iframe class="MovieConteiner__YoutubeMovie" loading="lazy" width="732" height="424" src="https://www.youtube.com/embed/Td8-QNXMyys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </section>
                 <section class="MovieConteiner__Productionexplanation">
                     <h3 class="MovieConteiner__Explanation">Explanation</h3>
@@ -641,7 +654,7 @@
                 </section>
             </article>
         </article>
-    </main>　
+    </main>
     <script src="node_modules/gsap/dist/gsap.min.js"></script>
     <script src="node_modules/gsap/dist/ScrollTrigger.min.js"></script>
     <script src="JS/TriggerJS/Scrolltrigger.js"></script>
@@ -650,6 +663,7 @@
     <script src="JS/Vantajs/Vanta.js"></script>
     <script src="node_modules/swiper/swiper-bundle.min.js"></script>
     <script src="JS/SwiperJS/Slider.js"></script>
+    <script src="Js/Lazy.Js/Lazy.js"></script>
 
 </body>
 
