@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&family=Noto+Serif+JP:wght@900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="scss/style.min.css">
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
     <title>ポートフォリオ</title>
     <meta name="description" content="ドウブラリアミンのポートフォリオサイトとなっております。作品集の投稿githubのURLなど記載しております。">
     <meta property="og:title" content="ポートフォリオサイト">
@@ -561,10 +562,29 @@
                 <section class="Workdescription__ImageBox">
                     <div class="swiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="images/sample_01.png" alt=""></div>
-                            <div class="swiper-slide"><img src="images/sample_02.png" alt=""></div>
-                            <div class="swiper-slide"><img src="images/sample_03.png" alt=""></div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="images/Webp/Graphic/Graphic__01.jpg">
+                                    <img class="ImageEditSize" src="images/Webp/Graphic/Graphic__01.webp" width="1920"
+                                        alt="グラフィック作品の紹介写真">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="images/Webp/Graphic/Graphic__02.jpg">
+                                    <img class="ImageEditSize" src="images/Webp/Graphic/Graphic__02.webp" width="1920"
+                                        alt="グラフィック作品の紹介写真">
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source srcset="images/Webp/Graphic/Graphic__03.jpg">
+                                    <img class="ImageEditSize" src="images/Webp/Graphic/Graphic__03.webp" width="1920"
+                                        alt="グラフィック作品の紹介写真">
+                                </picture>
+                            </div>
                         </div>
+                    </div>
                 </section>
                 <section class="Workdescription__Productionexplanation">
                     <h3 class="Workdescription__Explanation">Explanation</h3>
@@ -588,7 +608,6 @@
     <script src="node_modules/vanta/vendor/three.r119.min.js"></script>
     <script src="node_modules/vanta/dist/vanta.net.min.js"></script>
     <script src="JS/Vantajs/Vanta.js"></script>
-    <script src="node_modules/swiper/swiper-bundle.min.css"></script>
     <script src="node_modules/swiper/swiper-bundle.min.js"></script>
     <script src="JS/SwiperJS/Slider.js"></script>
 
