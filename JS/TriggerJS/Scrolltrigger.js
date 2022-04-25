@@ -53,10 +53,11 @@ gsap.to(".DesginConteiner__HeaddingText", {
     opacity: 1,
 });
 
-gsap.to(".JS-TriggerAnimation01",{
+gsap.to(".JS-TriggerAnimation01", {
     scrollTrigger: {
         trigger: '.JS-TriggerAnimation01',
         start: 'top center',
+        end: '+=1000',
         scrub: true,
         pin: true,
     },
@@ -90,6 +91,17 @@ gsap.to(".JS-TriggerAnimation04", {
         trigger: ".JS-TriggerAnimation04",
         start: "top center",
         end: '+=500',
+        scrub: true,
+        pin: true,
+    },
+    opacity: 1,
+});
+
+gsap.to(".JS-TriggerAnimation05", {
+    scrollTrigger: {
+        trigger: ".JS-TriggerAnimation05",
+        start: "top center",
+        end: '+=1500',
         scrub: true,
         pin: true,
     },
