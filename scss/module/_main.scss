@@ -255,7 +255,7 @@
     }
 
     &__Lists {
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
         display: flex;
         justify-content: center;
@@ -374,7 +374,6 @@
     }
 
     &__Explanation {
-        margin: 20px 0;
         font-size: f.$font-size-giga;
         line-height: 80%;
         font-family: f.$engfontfamily;
@@ -558,13 +557,6 @@
 
         @media (prefers-color-scheme: dark) {
             border-bottom: 1px solid rgb(189, 189, 189);
-        }
-    }
-
-    &__YoutubeMovie {
-        @include break.breakpoint(smartphone) {
-            width: 292px;
-            height: 169px;
         }
     }
 }
