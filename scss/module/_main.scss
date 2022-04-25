@@ -325,16 +325,17 @@
     }
 
     &__SecondHeaddingText {
-        margin-top: 10px;
+        margin-top: 50px;
         font-size: 5rem;
         line-height: 80%;
-        opacity: 1;
         font-family: f.$engfontfamily;
         text-align: center;
         vertical-align: text-top;
+        opacity: 0;
     }
     &__ContentBox{
         margin: 50px 0;
+        opacity: 0;
     }
     &__ImageBox{
         width: 1160px;
