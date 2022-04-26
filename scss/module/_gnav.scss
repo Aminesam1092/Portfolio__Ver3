@@ -9,7 +9,7 @@
         color: rgb(194, 194, 194);
     }
     @include break.breakpoint(smartphone) {
-        font-size: f.$font-size-milli;
+        font-size: f.$font-size-base;
     }
     &__Lists{
         display: flex;
