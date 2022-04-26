@@ -345,7 +345,7 @@
     }
 
     &__ImageBox {
-        width: 40%;
+        width: 50%;
         margin: 0 50px;
 
         @include break.breakpoint(tablet) {
@@ -373,19 +373,10 @@
         vertical-align: text-top;
     }
 
-    &__Explanation {
-        font-size: f.$font-size-giga;
-        line-height: 80%;
-        font-family: f.$engfontfamily;
-        text-align: center;
-        vertical-align: text-top;
-    }
-
     &__Productionexplanation {
-        width: 40%;
+        width: 50%;
         background-color: white;
         box-shadow: 0px 0px 25px white;
-
         @include break.breakpoint(tablet) {
             width: 80%;
         }
@@ -401,9 +392,18 @@
         }
     }
 
+    &__Explanation {
+        font-size: f.$font-size-giga;
+        line-height: 80%;
+        font-family: f.$engfontfamily;
+        text-align: center;
+        vertical-align: text-top;
+    }
+
+
     &__ExplanationText {
         margin: 10px 50px;
-        font-size: 1.4vmin;
+        font-size: 1.7vmin;
         font-family: f.$jafontfamily;
         text-align: left;
         vertical-align: text-top;
