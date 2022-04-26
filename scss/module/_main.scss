@@ -377,6 +377,7 @@
         width: 50%;
         background-color: white;
         box-shadow: 0px 0px 25px white;
+
         @include break.breakpoint(tablet) {
             width: 80%;
         }
@@ -509,10 +510,10 @@
 
 .MovieConteiner {
     width: 100%;
+
     @include break.breakpoint(tablet) {}
 
-    @include break.breakpoint(smartphone) {
-    }
+    @include break.breakpoint(smartphone) {}
 
     &__HeaddingText {
         margin-top: 10px;

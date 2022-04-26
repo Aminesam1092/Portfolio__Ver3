@@ -1,25 +1,31 @@
 @use "../mixin/font"as f;
 @use "../mixin/breakpoint"as break;
-.Nav{
+
+.Nav {
     width: 100%;
     font-size: f.$font-size-mega;
     font-family: f.$engfontfamily;
+
     @media (prefers-color-scheme: dark) {
         background-color: rgb(24, 24, 24);
         color: rgb(194, 194, 194);
     }
+
     @include break.breakpoint(smartphone) {
         font-size: f.$font-size-base;
     }
-    &__Lists{
+
+    &__Lists {
         display: flex;
         justify-content: end;
         align-items: center;
+
         @include break.breakpoint(tablet) {
             justify-content: center;
         }
     }
-    &__List{
+
+    &__List {
         margin: 20px 20px;
         line-height: 80%;
     }

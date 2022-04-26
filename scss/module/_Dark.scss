@@ -1,15 +1,17 @@
-#JS-BackgroundWave{
+#JS-BackgroundWave {
     @media (prefers-color-scheme: dark) {
         display: none;
     }
 }
-body{
+
+body {
     @media (prefers-color-scheme: dark) {
         background-color: rgb(24, 24, 24);
         color: rgb(194, 194, 194);
     }
 }
-a{
+
+a {
     @media (prefers-color-scheme: dark) {
         color: rgb(194, 194, 194);
     }
