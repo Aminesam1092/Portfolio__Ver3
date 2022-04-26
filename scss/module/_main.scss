@@ -345,7 +345,7 @@
     }
 
     &__ImageBox {
-        width: 50%;
+        width: 40%;
         margin: 0 50px;
 
         @include break.breakpoint(tablet) {
@@ -403,7 +403,7 @@
 
     &__ExplanationText {
         margin: 10px 50px;
-        font-size: f.$font-size-milli;
+        font-size: 1.4vmin;
         font-family: f.$jafontfamily;
         text-align: left;
         vertical-align: text-top;
