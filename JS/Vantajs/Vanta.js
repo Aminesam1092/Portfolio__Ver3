@@ -15,7 +15,7 @@ VANTA.NET({
 });
 
 VANTA.NET({
-  el: ".JS-BackgroundDark",
+  el: "JS-BackgroundDark",
   mouseControls: true,
   touchControls: true,
   gyroControls: false,
