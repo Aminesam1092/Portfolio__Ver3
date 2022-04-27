@@ -324,7 +324,7 @@
 
         @include break.breakpoint(tablet) {
             margin: 0px;
-            padding: 0px;
+            padding: 10px;
             margin: 10px auto;
         }
     }
@@ -362,7 +362,7 @@
         @include break.breakpoint(tablet) {
             width: 70%;
             margin: 0px;
-            padding: 0px;
+            padding: 10px;
         }
 
         @include break.breakpoint(smartphone) {
@@ -399,7 +399,7 @@
         @include break.breakpoint(tablet) {
             width: 80%;
             margin: 0px;
-            padding: 0px;
+            padding: 10px;
             border-radius: 0px;
         }
 
@@ -569,12 +569,12 @@
         padding: 20px;
         @include break.breakpoint(tablet) {
             margin: 0px;
-            padding: 0px;
+            padding: 10px;
         }
 
         @include break.breakpoint(smartphone) {
             margin: 0px;
-            padding: 0px;
+            padding: 10px;
         }
     }
     &__Image{
@@ -584,12 +584,12 @@
         padding: 20px;
         @include break.breakpoint(tablet) {
             margin: 0px;
-            padding: 0px;
+            padding: 10px;
         }
 
         @include break.breakpoint(smartphone) {
             margin: 0px;
-            padding: 0px;
+            padding: 10px;
         }
     }
 
@@ -603,7 +603,7 @@
 
         @include break.breakpoint(tablet) {
             width: 80%;
-            padding: 0px;
+            padding: 10px;
             margin: 0px;
         }
 
