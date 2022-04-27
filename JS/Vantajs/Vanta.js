@@ -3,8 +3,8 @@ VANTA.NET({
   mouseControls: false,
   touchControls: false,
   gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
+  minHeight: 1080.00,
+  minWidth: 1920.00,
   scale: 1.00,
   scaleMobile: 1.00,
   color: 0xd2d2d2,
@@ -15,14 +15,14 @@ VANTA.NET({
 });
 
 VANTA.NET({
-  el: "JS-BackgroundDark",
-  mouseControls: true,
-  touchControls: true,
+  el: "#JS-BackgroundDark",
+  mouseControls: false,
+  touchControls: false,
   gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
+  minHeight: 1080.00,
+  minWidth: 1920.00,
   scale: 1.00,
   scaleMobile: 1.00,
   color: 0xff7900,
-  backgroundColor: 0x282828
+  backgroundColor: 0x181818
 })

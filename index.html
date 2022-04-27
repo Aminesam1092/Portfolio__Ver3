@@ -630,11 +630,12 @@
         </article>
         <article class="MovieConteiner" id="MOVIE">
             <h2 class="MovieConteiner__HeaddingText JS-TriggerAnimation05">Movie</h2>
-            <article class="MovieConteiner__Conteiner">
-                <div class="MovieConteiner__ImageBox">
-                    <video class="MovieConteiner__Movie" autoplay muted loop playsinline width="732" height="304">
-                        <source data-src="video/video.mp4" type="video/mp4">
-                        <source data-src="video/video.webm" type="video/webm">
+            <div class="MovieConteiner__Conteiner">
+                <div class="MovieConteiner__Box">
+                    <video class="MovieConteiner__Movie" poster="video/video_Moment.jpg" autoplay muted loop playsinline
+                        width="732" height="304">
+                        <source src="video/video.mp4" type="video/video.mp4">
+                        <source src="video/video.webm" type="video/video.webm">
                     </video>
                 </div>
                 <section class="MovieConteiner__Productionexplanation">
@@ -644,10 +645,29 @@
                     <p class="MovieConteiner__ExplanationText">桜や光などの物理演算が必要な要素を自然な形で再現することです。</p>
                     <p class="MovieConteiner__ExplanationText">今後動画を使用したWebサイトが増えて行くと思い、動画制作技術</p>
                     <p class="MovieConteiner__ExplanationText">を1から勉強し動画コンテストに2021年10月に優勝する事が出来ました。</p>
+                    <p class="MovieConteiner__ExplanationText"><a class="Link"
+                            href="https://www.youtube.com/watch?v=zpnsGK035jw">動画が自動再生されない場合お手数ですがこちらをクリックお願いします</a></p>
                 </section>
-            </article>
+            </div>
+            <div class="MovieConteiner__Conteiner">
+                <div class="MovieConteiner__Box">
+                    <picture>
+                        <source srcset="images/Webp/Graphic/Ending.jpg">
+                        <img class="MovieConteiner__Image" src="images/Webp/Graphic/Ending.webp" width="1920"
+                            alt="動画作品の紹介写真">
+                    </picture>
+                </div>
+                <section class="MovieConteiner__Productionexplanation">
+                    <h3 class="MovieConteiner__Explanation">Explanation</h3>
+                    <p class="MovieConteiner__ExplanationText">この作品は依頼を受けて作成いたしました。</p>
+                    <p class="MovieConteiner__ExplanationText">こちらの作品を作るにあたってかっこよさを重視してほしいとご依頼を受け</p>
+                    <p class="MovieConteiner__ExplanationText">矢印や爆発エフェクトを１から作成し音楽に合わせカット毎にブラーを</p>
+                    <p class="MovieConteiner__ExplanationText">入れることでインパクトを表現しつつかっこよさもある感じに制作しました。</p>
+                    <p class="MovieConteiner__ExplanationText"><a class="Link"
+                            href="https://www.youtube.com/watch?v=dcGLWu23X-Q">動画を視聴する場合はこちらをクリックお願いします</a></p>
+                </section>
+            </div>
         </article>
-
     </main>
     <script src="node_modules/gsap/dist/gsap.min.js"></script>
     <script src="node_modules/gsap/dist/ScrollTrigger.min.js"></script>
@@ -658,7 +678,7 @@
     <script src="JS/Vantajs/Darkmode.js"></script>
     <script src="node_modules/swiper/swiper-bundle.min.js"></script>
     <script src="JS/SwiperJS/Slider.js"></script>
-    <script src="Js/Lazy.Js/Lazy.js"></script>
+    <script src="JS/Lazy.Js/Lazy.js"></script>
 
 </body>
 

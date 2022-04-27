@@ -4,8 +4,8 @@ const VantaDark = function () {
 };
 
 const VantaLight = function () {
-    document.querySelector('#JS-Background').style.display = "none";
-    document.querySelector('JS-BackgroundDark').style.display = "block";
+    document.querySelector('#JS-Background').style.display = "block";
+    document.querySelector('#JS-BackgroundDark').style.display = "none";
 };
 
 if (window.matchMedia('(prefers-color-scheme: dark)').matches == true) {
