@@ -1,1 +1,27 @@
 @use "../mixin/font" as f;
+@use "../module/Dark" as Dark;
+@use "../mixin/breakpoint" as break;
+.Footer{
+    &__Text{
+        margin: 20px;
+        padding: 20px;
+        font-size: f.$font-size-base;
+        line-height: 80%;
+        font-family: f.$engfontfamily;
+        vertical-align: text-top;
+        text-align: center;
+
+        @include break.breakpoint(tablet) {
+            margin-top: 300px;
+        }
+
+        @include break.breakpoint(smartphone) {
+            font-size:f.$font-size-micro;
+            margin-top: 0px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            color: rgb(194, 194, 194);
+        }
+    }
+}
