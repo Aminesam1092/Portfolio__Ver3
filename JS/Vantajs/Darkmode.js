@@ -13,7 +13,7 @@ const NotSmart = function () {
     document.querySelector('#JS-BackgroundDark').style.display = "none";
 };
 
-function VantaNoneSp() {
+function VantaChangecolor() {
     if (window.matchMedia('(prefers-color-scheme: dark)').matches == true) {
         VantaDark();
     } else {
@@ -35,7 +35,7 @@ function VantaNoneSp() {
 if (window.matchMedia('(max-device-width: 530px)').matches == true) {
     NotSmart();
 } else {
-    YesColor();
+    VantaChangecolor();
 }
 
 
@@ -44,6 +44,6 @@ window.matchMedia('(max-device-width: 530px)').addEventListener('change', (e) =>
         NotSmart();
 
     } else {
-        YesColor();
+        VantaChangecolor();
     }
 });
