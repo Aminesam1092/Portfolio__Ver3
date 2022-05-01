@@ -1,3 +1,13 @@
+@font-face {
+    font-family: EngFont;
+    src: url(/fonts/OrelegaOne-Regular.woff2);
+}
+
+@font-face {
+    font-family: JAFont;
+    src: url(/fonts/Gensingosic.woff2);
+}
+
 $font-size-micro: 12px;
 $font-size-milli: 14px;
 $font-size-base: 16px;
@@ -5,10 +15,10 @@ $font-size-kilo: 18px;
 $font-size-mega: 24px;
 $font-size-giga: 32px;
 
-$jafontfamily: 'Noto Serif JP',
+$jafontfamily:  'JAFont',
 serif;
 ;
-$engfontfamily: 'Orelega One',
+$engfontfamily: 'EngFont',
 cursive;
 
 $font-base-color: black;
