@@ -40,8 +40,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    window.matchMedia('(max-device-width: 530px)').addEventListener('change', (e) => {
-        if (e.matches) {
+    window.matchMedia('(max-device-width: 530px)').addEventListener('change', () => {
+        if (matches) {
             NotSmart();
 
         } else {
